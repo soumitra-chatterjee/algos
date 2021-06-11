@@ -21,7 +21,6 @@ void subsets( int k, int n)
         // backtrack
         v.pop_back();        
     }
-    
 }
 
 
