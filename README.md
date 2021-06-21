@@ -1,6 +1,6 @@
 # algos
 
-:wave: Here are the algorithms for some of the problems that I attempted or found interesting.
+:wave: Here you can find solved algorithms for some problems that I attempted or found interesting.
 
 
 
