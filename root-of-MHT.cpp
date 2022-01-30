@@ -3,7 +3,7 @@
  * of N nodes, each node with a label from '0' to'N-1')
 */
 
-vector<int> FindRootsOfMHT(int n, vector<pair<int>> edges) {
+vector<int> FindRootsOfMHT(int n, vector<pair<int, int>> edges) {
         if(n == 1) {
             return {0};
         }
@@ -45,3 +45,20 @@ vector<int> FindRootsOfMHT(int n, vector<pair<int>> edges) {
         }
         return ans;
     }
+
+// driver function
+int main() {
+    int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        vector<pair<int, int>> edges(n-1);
+        for(int i = 0; i < n-1; i++ ) {
+            cin >> edges[i][0] >> edges[i][1];
+        }
+    }
+    return 0;
+}
+
+            
