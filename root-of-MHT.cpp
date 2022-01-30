@@ -1,10 +1,13 @@
-// Find the root(s) of MHTs of a given tree (consisting 
-// of N nodes, each node with a label from '0' to'N-1'
+/*
+ * Find the root(s) of MHTs of a given tree (consisting 
+ * of N nodes, each node with a label from '0' to'N-1'
+*/
 
 vector<int> FindRootsOfMHT(int n, vector<pair<int>> edges) {
         if(n == 1) {
             return {0};
         }
+        // adjacency list
         vector<int> adj[n];
         vector<int> degree(n);
         for(vector<int> e: edges) {
@@ -21,6 +24,8 @@ vector<int> FindRootsOfMHT(int n, vector<pair<int>> edges) {
                 q.push(x);
             }
         }
+        
+        // bfs
         while(n > 2) {
             int k = q.size();
             n -= k;
