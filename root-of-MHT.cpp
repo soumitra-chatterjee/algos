@@ -1,6 +1,6 @@
 /*
  * Find the root(s) of MHTs of a given tree (consisting 
- * of N nodes, each node with a label from '0' to'N-1'
+ * of N nodes, each node with a label from '0' to'N-1')
 */
 
 vector<int> FindRootsOfMHT(int n, vector<pair<int>> edges) {
